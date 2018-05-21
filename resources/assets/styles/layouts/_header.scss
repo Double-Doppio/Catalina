@@ -1,0 +1,261 @@
+header {
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li a {
+  margin: 20px;
+  padding: 3px 0;
+  font: 1em $gtaExtBlk;
+  letter-spacing: 0.05em;
+  color: $black;
+}
+
+a:visited {
+  color: $black;
+}
+
+li:first-child {
+  margin-left: 0;
+}
+
+.banner .nav li {
+  @extend .nav-item;
+}
+
+li a:hover {
+  border-bottom: 3px solid $red;
+  color: #000;
+  text-decoration: none;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.catWrapper {
+  height: 5.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid $black;
+  position: relative;
+  z-index: 10;
+}
+
+h3.tagLine {
+  flex-basis: 33.3%;
+  padding-left: 20px;
+  text-align: left;
+  font: 1.3em $grotCond;
+}
+
+.brandName {
+  flex-basis: 33.3%;
+  text-align: center;
+}
+
+.logo {
+  width: 14em;
+}
+
+.burgerWrapper {
+  flex-basis: 20%;
+  position: relative;
+  height: 26px;
+}
+
+div.burger {
+  position: absolute;
+  right: 25px;
+  height: 18px;
+  width: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+span {
+  position: absolute;
+  display: inline-block;
+  height: 4px;
+  width: 27px;
+  background: $black;
+  transition: 0.25s ease-in-out;
+}
+
+.spanHover {
+  background-color: #ccc;
+}
+
+.burger span:nth-child(1) {
+  top: 0;
+}
+
+.burger span:nth-child(2) {
+  top: 10px;
+}
+
+.burger span:nth-child(3) {
+  top: 10px;
+}
+
+.burger span:nth-child(4) {
+  top: 20px;
+}
+
+/* click event to open burger icon */
+
+.burger.open span:nth-child(1),
+.burger.open span:nth-child(4) {
+  top: 15px;
+  opacity: 0;
+}
+
+.burger.open span:nth-child(2) {
+  transform: rotate(225deg);
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-225deg);
+}
+
+.burger.open span:nth-child(4) {
+  top: 15px;
+  opacity: 0;
+}
+
+/* --  Lower nav styles -- */
+
+nav {
+  text-align: center;
+}
+
+ul.navigation {
+  display: inline-flex;
+  justify-content: center;
+  list-style: none;
+  padding: 25px 0;
+  position: relative;
+  color: black;
+  margin-bottom: 0;
+}
+
+.navShow {
+  visibility: visible;
+  position: absolute;
+  top: 80px;
+  height: 100px;
+  transition: all 0.35s ease-in 0.1s;
+}
+
+// Buttons
+
+.btn {
+  border: 2px solid;
+  font: 0.7em $gtaExtBlk;
+  background: white;
+  width: 10em;
+  padding: 10px 0 8px;
+  cursor: pointer;
+  display: inline-block;
+  transition-duration: 0.3s;
+  border-radius: 0;
+}
+
+.btn:focus {
+  outline: transparent;
+}
+
+.btn-prime {
+  border-color: $red;
+  text-transform: uppercase;
+
+  a {
+    color: $black;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &:hover {
+    border-color: $blue;
+  }
+}
+
+.btn-prime:first-child {
+  margin-right: 10px;
+}
+
+/* -- desktop primary button group right side nav -- */
+.btn-group {
+  flex-basis: 33.3%;
+  padding-right: 25px;
+  justify-content: flex-end;
+}
+
+/*  secondary buttons */
+.btn-second {
+  font-size: 1.1em;
+  border-color: $black;
+  background: transparent;
+  width: 180px;
+  height: 58px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25px;
+}
+
+.btn-second:hover {
+  color: $white;
+}
+
+// Menu
+
+.flex-container-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-sub-main {
+  flex-basis: 60%;
+}
+
+.flex-3 {
+  flex-basis: 20%;
+}
+
+.flex-left {
+  padding-left: 25px;
+}
+
+.flex-right {
+  justify-content: flex-end;
+  align-items: center;
+  display: inline-flex;
+  padding-right: 25px;
+}
+
+.language-link-1 {
+  margin-right: 12px;
+}
+
+.language-link-2 {
+  margin-left: 12px;
+}
+
+.language-link-1,
+.language-link-2 {
+  font-family: $gtaMono;
+
+  &:hover {
+    text-decoration: none;
+    color: $red;
+  }
+}

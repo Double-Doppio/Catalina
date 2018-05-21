@@ -1,0 +1,54 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+// Fonts
+
+@font-face {
+  font-family: "GrotzeCondBld";
+  src: url("../fonts/GrotzecCond-Bold.eot"), url("../fonts/GrotzecCond-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/GrotzecCond-Bold.woff") format("woff"), url("../fonts/GrotzecCond-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GrotzecXnarrowBld";
+  src: url("../fonts/GrotzecXnarrow-Bold.eot"), url("../fonts/GrotzecXnarrow-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/GrotzecXnarrow-Bold.woff") format("woff"), url("../fonts/GrotzecXnarrow-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GTAmerica-ExtBlk";
+  src: url("../fonts/GT-America-Extended-Black.eot"), url("../fonts/GT-America-Extended-Black.eot?#iefix") format('embedded-opentype'), url("../fonts/GT-America-Extended-Black.woff") format("woff"), url("../fonts/GT-America-Extended-Black.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GTAmerica-Mono";
+  src: url("../fonts/GT-America-Mono-Regular.eot"), url("../fonts/GT-America-Mono-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/GT-America-Mono-Regular.woff") format("woff"), url("../fonts/GT-America-Mono-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+// Grotzec
+$grotCond: 'GrotzeCondBld',
+  sans-serif;
+$grotXnar: 'grotzecXnarrowBld',
+  sans-serif;
+
+// $gtaBlk: 'GTAmerica_BLK', sans-serif;
+
+// GT America
+$gtaMono: 'GTAmerica-Mono',
+  sans-serif;
+$gtaExtBlk: 'GTAmerica-ExtBlk',
+  sans-serif;
+$fontBody: 16px;
+
+// Colors
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$blue: rgb(0, 134, 255);
+$red: rgb(238, 44, 71);
+$green: rgb(45, 243, 121);

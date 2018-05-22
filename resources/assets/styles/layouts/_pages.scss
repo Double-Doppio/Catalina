@@ -2,6 +2,7 @@
 .wrap {
   padding-top: 162px;
   color: $black;
+  display: flex;
 }
 
 h1 {
@@ -10,6 +11,7 @@ h1 {
 
 .section-container {
   display: flex;
+  flex: 1;
 }
 
 .text-section,
@@ -21,7 +23,7 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -57,12 +59,24 @@ h1 {
   font-family: $grotCond;
   font-size: 26px;
   text-decoration: underline;
-  padding-top: 70px;
+}
+
+.text-title {
+  font-family: $grotXnar;
+  text-align: center;
+  font-size: 264px;
+  line-height: 200px;
+  padding: 0 70px;
+}
+
+.text-title-small {
+  font-size: 190px;
+  line-height: 175px;
 }
 
 .text-mid {
   font-family: $gtaExtBlk;
-  font-size: 45px;
+  font-size: 28px;
   text-align: center;
   padding: 0 70px;
 }
@@ -84,4 +98,8 @@ h1 {
   font-family: $grotXnar;
   font-size: 75px;
   padding-bottom: 70px;
+}
+
+.no-learn {
+  font-size: 55px;
 }

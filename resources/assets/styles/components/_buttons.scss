@@ -1,0 +1,16 @@
+.learn-more {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $black;
+  color: $black;
+  font-family: $gtaExtBlk;
+  font-size: 18px;
+  margin-bottom: 70px;
+  padding: 17px 20px;
+
+  p {
+    margin: 0;
+  }
+}

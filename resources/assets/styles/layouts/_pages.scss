@@ -76,9 +76,9 @@ h1 {
 
 .text-mid {
   font-family: $gtaExtBlk;
-  font-size: 28px;
+  font-size: 38px;
   text-align: center;
-  padding: 0 70px;
+  padding: 0 100px;
 }
 
 // Custom Styling For First Home Section
@@ -102,4 +102,21 @@ h1 {
 
 .no-learn {
   font-size: 55px;
+}
+
+.meet-title {
+  padding: 0 125px;
+  line-height: 220px;
+}
+
+.fa-angle-down {
+  font-size: 60px;
+}
+
+.text-body {
+  font-family: 'Times New Roman', Times, serif;
+  width: 65%;
+  margin: 0 auto;
+  padding: 60px 0;
+  font-size: 35px;
 }

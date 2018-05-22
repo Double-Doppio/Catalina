@@ -28,7 +28,8 @@ li:first-child {
   @extend .nav-item;
 }
 
-li a:hover {
+li a:hover,
+.menu-active {
   border-bottom: 3px solid $red;
   color: #000;
   text-decoration: none;

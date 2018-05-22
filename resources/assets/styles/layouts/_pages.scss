@@ -1,0 +1,63 @@
+
+.wrap {
+  padding-top: 162px;
+  color: $black;
+}
+
+.section-container {
+  display: flex;
+}
+
+.text-section,
+.image-section {
+  height: 90vh;
+  width: 50vw;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.image-section {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.top-section {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.box-red {
+  background-color: $red;
+}
+
+.box-blue {
+  background-color: $blue;
+}
+
+.box-green {
+  background-color: $green;
+}
+
+.home-top {
+  font-family: $gtaExtBlk;
+  font-size: 45px;
+}
+
+.home-mid {
+  font-family: $grotXnar;
+  font-size: 520px;
+}
+
+.home-bot {
+  font-family: $grotXnar;
+  font-size: 75px;
+}

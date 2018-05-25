@@ -121,3 +121,56 @@ h1 {
 .fa-angle-down {
   font-size: 60px;
 }
+
+// News Page
+
+.container-news {
+  width: 65%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.section-news {
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
+}
+
+.publisher,
+.date-author {
+  font-family: $gtaMono;
+  font-size: 22px;
+  width: 100%;
+}
+
+.date-author {
+  margin-top: 1em;
+}
+
+.title-news {
+  font-family: $gtaExtBlk;
+  font-size: 46px;
+  width: 100%;
+}
+
+.title-video {
+  width: 100%;
+  display: block;
+  font-family: $gtaMono;
+  font-size: 22px;
+  margin: 1em 0;
+}
+
+.link-video {
+  width: 100%;
+}
+
+.excerpt {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+  width: 100%;
+}
+
+hr {
+  margin-bottom: 2em;
+}

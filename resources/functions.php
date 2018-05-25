@@ -193,3 +193,37 @@ function create_issue_tax() {
 }
 
 add_action( 'init', 'create_issue_tax' );
+
+// Add Issues to stack automatically upon first publish
+
+// function add_issue_to_stack() {
+
+//     $order = get_field('order', 11);
+
+//     $args = array(
+//         'numberposts' => 1,
+//         'offset' => 0,
+//         'category' => 0,
+//         'orderby' => 'post_date',
+//         'order' => 'DESC',
+//         'post_type' => 'issue',
+//         'post_status' => 'draft, publish, future, pending, private',
+//         'suppress_filters' => true
+//     );
+    
+//     $recent_posts = wp_get_recent_posts( $args );
+
+//     foreach($recent_posts as $recent){
+
+//         if (array_search($recent->ID, $orderArray) == FALSE ){
+
+//             array_push($order, $recent->ID);
+
+//         }
+
+//     }
+
+//     update_field('order', $order, 11);
+// }
+
+// add_action('publish_issue', 'add_issue_to_stack');

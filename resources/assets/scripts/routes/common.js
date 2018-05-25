@@ -3,8 +3,6 @@ export default {
     // JavaScript to be fired on all pages
 
     // Active Menu Item
-    console.log($('.navigation li a').attr('href'));
-    console.log(window.location.pathname);
 
     $('.navigation li a').each( function(){
 

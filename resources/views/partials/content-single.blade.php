@@ -1,13 +1,30 @@
-<article @php post_class() @endphp>
-  <header>
-    <h1 class="entry-title">{{ get_the_title() }}</h1>
-    @include('partials/entry-meta')
-  </header>
-  <div class="entry-content">
-    @php the_content() @endphp
-  </div>
-  <footer>
-    {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
-  </footer>
-  @php comments_template('/partials/comments.blade.php') @endphp
-</article>
+
+<div class="section-container">
+
+    <div class="text-section box-blue">
+      <h1 class="text-top">NEWS</h1>
+      <h1 class="text-title">NEWS ABOUT CATALINA</h1>
+      <h1 class="text-mid">The latest news about Catalina’s campaign and our community.</h1>
+      <h1 class="text-bot"><i class="fa fa-angle-down"></i></h1>
+    </div>
+
+    <div class="image-section">
+      <img src="@asset('images/7Y5A6946-high-res-adjusted-flat.jpg')"/>
+    </div>
+
+</div>
+
+<?php 
+  $publisher = get_field("publisher");
+  $date = get_field("publish_date");
+  $author = get_field("author");
+?>
+
+<div class="text-body">
+
+    <p class="publisher"><?php echo $publisher; ?></p>
+    <h1 class="title-news"><?php echo get_the_title(); ?></h1>
+    <p class="date-author"><?php echo $date." | by ".$author; ?></p>
+    <p class="text"><?php the_content(); ?></p>
+    
+</div>

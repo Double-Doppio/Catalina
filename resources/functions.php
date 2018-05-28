@@ -196,34 +196,35 @@ add_action( 'init', 'create_issue_tax' );
 
 // Add Issues to stack automatically upon first publish
 
-// function add_issue_to_stack() {
+function add_issue_to_stack() {
 
-//     $order = get_field('order', 11);
+    $order = get_field('order', 11);
 
-//     $args = array(
-//         'numberposts' => 1,
-//         'offset' => 0,
-//         'category' => 0,
-//         'orderby' => 'post_date',
-//         'order' => 'DESC',
-//         'post_type' => 'issue',
-//         'post_status' => 'draft, publish, future, pending, private',
-//         'suppress_filters' => true
-//     );
+    $args = array(
+        'numberposts' => 1,
+        'offset' => 0,
+        'category' => 0,
+        'orderby' => 'post_date',
+        'order' => 'DESC',
+        'post_type' => 'issue',
+        'post_status' => 'draft, publish, future, pending, private',
+        'suppress_filters' => true
+    );
     
-//     $recent_posts = wp_get_recent_posts( $args );
+    $recent_posts = wp_get_recent_posts( $args );
 
-//     foreach($recent_posts as $recent){
+    foreach($recent_posts as $recent){
 
-//         if (array_search($recent->ID, $orderArray) == FALSE ){
+        if (array_search($recent['ID'], $order) == FALSE ){
 
-//             array_push($order, $recent->ID);
+            array_push($order, $recent['ID']);
 
-//         }
+        }
 
-//     }
+        update_field('order', $order, 11);
 
-//     update_field('order', $order, 11);
-// }
+    }
+    
+  }
 
-// add_action('publish_issue', 'add_issue_to_stack');
+add_action('publish_issue', 'add_issue_to_stack');

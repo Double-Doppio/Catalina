@@ -34,7 +34,7 @@
     <div class="text-section box-<?php echo $color; ?>">
       <h1 class="text-top"><?php echo $orderNumber; ?></h1>
       <h1 class="text-title"><?php echo get_the_title();?></h1>
-      <h1 class="text-mid"><?php echo get_field('issue_subtitle'); ?></h1>
+      <h1 class="text-mid"><?php echo get_field('issue_subtitle' ); ?></h1>
       <a class="learn-more" href="<?php echo get_permalink(); ?>"><i class="fa fa-arrow-right"></i>&nbsp;<p>Learn More</p></a>
     </div>
 

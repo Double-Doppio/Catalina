@@ -1,3 +1,13 @@
+body {
+  border: 1px solid $black;
+  box-sizing: content-box;
+}
+
+body,
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .wrap {
   padding-top: 162px;
@@ -25,6 +35,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding: 15px 0;
 }
 
 .image-section {
@@ -32,11 +43,6 @@ h1 {
     width: 100%;
     height: auto;
   }
-}
-
-.top-section {
-  height: 100vh;
-  overflow-y: hidden;
 }
 
 // Box Colors
@@ -57,16 +63,15 @@ h1 {
 
 .text-top {
   font-family: $grotCond;
-  font-size: 26px;
+  font-size: 1.625em;
   text-decoration: underline;
 }
 
 .text-title {
   font-family: $grotXnar;
   text-align: center;
-  font-size: 264px;
+  font-size: 16.5em;
   line-height: 200px;
-  padding: 0 70px;
   text-transform: uppercase;
 }
 
@@ -77,9 +82,9 @@ h1 {
 
 .text-mid {
   font-family: $gtaExtBlk;
-  font-size: 38px;
+  font-size: 1.75em;
   text-align: center;
-  padding: 0 100px;
+  padding: 0 70px;
 }
 
 .text-body {
@@ -87,34 +92,33 @@ h1 {
   width: 65%;
   margin: 0 auto;
   padding: 60px 0;
-  font-size: 35px;
+  font-size: 1.625em;
 }
 
 // Custom Styling For First Home Section
 
 .home-top {
   font-family: $gtaExtBlk;
-  font-size: 45px;
+  font-size: 2.8em;
   text-decoration: none;
 }
 
 .home-mid {
   font-family: $grotXnar;
-  font-size: 520px;
+  font-size: 32.5em;
+  padding: 0 0;
 }
 
 .home-bot {
   font-family: $grotXnar;
-  font-size: 75px;
-  padding-bottom: 70px;
+  font-size: 4.7em;
 }
 
 .no-learn {
-  font-size: 55px;
+  font-size: 2.813em;
 }
 
 .meet-title {
-  padding: 0 125px;
   line-height: 220px;
 }
 
@@ -122,24 +126,42 @@ h1 {
   font-size: 60px;
 }
 
+// Issues Page
+
+.title-issue {
+  font-size: 11.875em;
+}
+
 // News Page
 
-.container-news {
+.container-news,
+.container-endo {
   width: 65%;
   margin: 0 auto;
   padding: 60px 0;
 }
 
-.section-news {
+.section-news,
+.section-endo {
   display: flex;
   flex-wrap: wrap;
-  // flex-direction: column;
+}
+
+.section-endo {
+  flex-direction: column;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+  }
 }
 
 .publisher,
 .date-author {
   font-family: $gtaMono;
-  font-size: 22px;
+  font-size: 1.375em;
   width: 100%;
 }
 
@@ -149,7 +171,7 @@ h1 {
 
 .title-news {
   font-family: $gtaExtBlk;
-  font-size: 46px;
+  font-size: 2.875em;
   width: 100%;
 }
 
@@ -157,7 +179,7 @@ h1 {
   width: 100%;
   display: block;
   font-family: $gtaMono;
-  font-size: 22px;
+  font-size: 1.375em;
   margin: 1em 0;
 }
 
@@ -167,10 +189,22 @@ h1 {
 
 .excerpt {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 26px;
+  font-size: 1.625em;
   width: 100%;
 }
 
 hr {
   margin-bottom: 2em;
+}
+
+// Endorsements Page
+
+.quote {
+  font-size: 1.125em;
+  font-family: $gtaMono;
+}
+
+.endorser {
+  font-size: 1em;
+  font-family: $gtaExtBlk;
 }

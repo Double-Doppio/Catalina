@@ -34,13 +34,14 @@
     $args = array(
       'post__in' => $order,
       'orderby'=>'post__in',
-      'post_type'=>'issue'
+      'post_type'=>'issue',
+      'numberposts'=>-1
     );
 
     $orderIssues = get_posts($args); 
 
     $counter = 0;
-
+    
     foreach($orderIssues as $issue){
   
     $counter++;
@@ -49,8 +50,7 @@
 
     $color = $colorArray[($counter%3)];
 
-    $issueID = $issue->ID;
-    
+    $issueID = $issue->ID;  
     if( $counter%2 == 1 ) { ?>
 
     <div class="section-container">

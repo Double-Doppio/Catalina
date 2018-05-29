@@ -1,7 +1,7 @@
 <footer class="content-info">
   <div class="btn-group footer-buttons">
     <button class="btn btn-prime join"><a href="#join">join us</a></button>
-    <button class="btn btn-prime contribute"><a href="#contribute">contribute</a></button>
+    <button class="btn btn-prime contribute"><a target="_blank" href="<?php echo get_field("actblue"); ?>">contribute</a></button>
   </div>
   <ul class="navigation flex-sub-main footer-ul">
 
@@ -47,7 +47,7 @@
 
     <p>Creative Team: <a href="">Theresa Canning-Zast</a> & <a href="">Cybele Grandjean</a></p>
     <p>Site by <a href="area-of-practice.com">Area-of-Practice.com</a></p>
-    <p>Development by <a href="">Teekay</a></p>
+    <p>Development by <a href="//eddy-leon.com">Eddy Leon</a></p>
     <p>Photos by <a href="">Jason Falchook</a></p>
   
   </div>

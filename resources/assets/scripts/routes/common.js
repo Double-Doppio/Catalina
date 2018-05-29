@@ -30,14 +30,6 @@ export default {
       }
     });
 
-    $('.contribute').on('click', function () {
-        $('.contribute-modal').fadeIn().css('display','flex');
-    });
-
-    $('.close-contribute').on('click', function () {
-      $('.contribute-modal').fadeOut();
-    });
-
     $(document).on('click', '.menu-open ', function () {
 
       $(this).removeClass('fa-bars menu-open').addClass('fa-times menu-close');

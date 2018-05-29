@@ -44,8 +44,12 @@
   .join-modal {
     height: calc(100vh - 5em);
 
+    h1 {
+      margin-bottom: 1em;
+    }
+
     p {
-      max-width: 90%;
+      display: none;
     }
   }
 
@@ -61,6 +65,15 @@
     .wrap {
       padding-top: 7.5em;
     }
+  }
+
+  .home-button {
+    display: block;
+    font-size: 2em;
+  }
+
+  .home-bot {
+    display: none;
   }
 
   .catWrapper,
@@ -184,6 +197,25 @@
     display: flex;
   }
 
+  .mobile-drop {
+    ul {
+      font-size: 2.5em;
+
+      li {
+        margin: 0.5em 0;
+      }
+    }
+
+    .btn-group {
+      flex-direction: column;
+
+      button {
+        margin: 1em 0;
+        padding: 15px 10px;
+      }
+    }
+  }
+
   .join-modal {
     .join-close {
       display: block;
@@ -225,14 +257,22 @@
     }
   }
 
+  .top-sec-cont {
+    height: calc(100vw - 7.5em);
+  }
+
+  .top-sec-text {
+    height: calc(100vw + 3.5em);
+  }
+
   .text-bot {
     display: none;
   }
 
   .top-section {
     img {
-      clip-path: polygon(0% 5%, 100% 5%, 100% 95%, 0% 95%);
-      margin-top: -6%;
+      clip-path: polygon(0% 8%, 100% 8%, 100% 95%, 0% 95%);
+      margin-top: -9%;
     }
   }
 

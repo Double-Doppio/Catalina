@@ -38,7 +38,7 @@
     </div>
     <div class="btn-group">
       <button class="btn btn-prime join"><a href="#join">join us</a></button>
-      <button class="btn btn-prime contribute"><a href="#contribute">contribute</a></button>
+      <button class="btn btn-prime contribute"><a target="_blank" href="<?php echo get_field("actblue", 8); ?>">contribute</a></button>
     </div>
   </div>
 
@@ -68,7 +68,7 @@
   </nav>
 
   <div class="mobile-menu">
-    <h3 class="tagLine">DEMOCRAT</h3>
+    <h3 class="tagLine">DEMOCRAT<br>FOR ASSEMBLY</h3>
     <div class="brandName">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="@asset('images/catalina-logo-fpo.svg')" alt="Catalina logo" /></a>
     </div>

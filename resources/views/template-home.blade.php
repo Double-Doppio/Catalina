@@ -11,13 +11,14 @@
   
   <div class="section-container rev">
 
-    <div class="text-section top-section box-blue">
+    <div class="text-section top-section box-blue top-sec-text">
       <h1 class="text-top home-top">DARE TO</h1>
       <h1 class="text-mid home-mid">DREAM</h1>
+      <button class="btn btn-prime contribute home-button"><a target="_blank" href="<?php echo get_field("actblue", 8); ?>">contribute</a></button>
       <h1 class="text-bot home-bot mobile-hide">DEMOCRAT FOR ASSEMBLY</h1>
     </div>
 
-    <div class="image-section top-section">
+    <div class="image-section top-section top-sec-cont">
       <img class="image-home" src="@asset('images/C-CRUZ_5_11_181708_X1_RGB.jpg')"/>
     </div>
   

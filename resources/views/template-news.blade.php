@@ -8,10 +8,17 @@
 
   <div class="section-container rev">
 
+    <?php
+      
+      $pageTitle = get_field("title");
+      $pageSubtitle = get_field("sub_title");
+
+    ?>  
+
     <div class="text-section box-blue">
       <h1 class="text-top">NEWS</h1>
-      <h1 class="text-title">NEWS ABOUT CATALINA</h1>
-      <h1 class="text-mid">The latest news about Catalina’s campaign and our community.</h1>
+      <h1 class="text-title"><?php echo $pageTitle; ?></h1>
+      <h1 class="text-mid"><?php echo $pageSubtitle; ?></h1>
       <h1 class="text-bot"><i class="fa fa-angle-down"></i></h1>
     </div>
 

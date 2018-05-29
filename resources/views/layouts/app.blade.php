@@ -24,7 +24,7 @@
 
         <div class="btn-group">
           <button class="btn btn-prime join"><a href="#join">join us</a></button>
-          <button class="btn btn-prime contribute"><a href="#contribute">contribute</a></button>
+          <button class="btn btn-prime contribute"><a target="_blank" href="<?php echo get_field("actblue", 8); ?>">contribute</a></button>
         </div>
 
         <div class="pdf-group">
@@ -33,6 +33,7 @@
         </div>
       </div>
       <div class="join-modal">
+        <h1>WILL YOU JOIN OUR TEAM?</h1>
         <p>I will stand up to Donald Trump and fight the Republican agenda of racism, sexism, and xenophobia. But I can't do it alone. It’s going to take strong grassroots campaign to defeat the powerful interests that have lined up against us. </p>
         <script type="text/javascript" src="//app.icontact.com/icp/core/mycontacts/signup/designer/form/automatic?id=346&cid=1738458&lid=19452"></script>
         <p class="join join-close"><i class="fa fa-times"></i></p>
@@ -42,7 +43,7 @@
 
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="@asset('images/catalina-logo-fpo.svg')" alt="Catalina logo" /></a>
 
-          <iframe width="100%" height="350px" src="https://www.youtube.com/embed/l9FGVybd4sQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe width="100%" height="350px" src="<?php echo get_field("video_embedded_url"); ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
           <div class="contribute-text">
           
@@ -52,9 +53,9 @@
             <?php $actblue = get_field("actblue"); ?>
 
             <div class="btn-group">
-              <button class="btn btn-prime"><a href="<?php echo $actblue.'?amount=10'; ?>">$10</a></button>
-              <button class="btn btn-prime"><a href="<?php echo $actblue.'?amount=25'; ?>"">$25</a></button>
-              <button class="btn btn-prime"><a href="<?php echo $actblue.'?amount=100'; ?>"">$100</a></button>
+              <button class="btn btn-prime"><a target="_blank" href="<?php echo $actblue.'?amount=10'; ?>">$10</a></button>
+              <button class="btn btn-prime"><a target="_blank" href="<?php echo $actblue.'?amount=25'; ?>"">$25</a></button>
+              <button class="btn btn-prime"><a target="_blank" href="<?php echo $actblue.'?amount=100'; ?>"">$100</a></button>
             </div>
 
             <p><i class="close-contribute fa fa-times"></i></p>

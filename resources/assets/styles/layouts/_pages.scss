@@ -87,7 +87,7 @@ h1 {
   font-size: 13.5em;
   line-height: 1em;
   text-transform: uppercase;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .text-title-small {
@@ -130,6 +130,10 @@ h1 {
 .home-bot {
   font-family: $grotXnar;
   font-size: 4.7em;
+}
+
+.home-button {
+  display: none;
 }
 
 .no-learn {
@@ -320,11 +324,16 @@ hr {
   align-items: center;
   width: 100%;
   max-width: 1438px;
-  z-index: 999;
+  z-index: 2000;
   height: calc(100vh - 10em);
   background-color: $blue;
   margin-top: -1px;
   padding-bottom: 1px;
+
+  h1 {
+    font-family: $grotXnar;
+    font-size: 5em;
+  }
 
   p {
     max-width: 55%;

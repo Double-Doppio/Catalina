@@ -7,7 +7,7 @@
 @section('content')
   @while(have_posts()) @php the_post() @endphp
 
-  <div class="section-container">
+  <div class="section-container rev">
 
     <div class="text-section box-green">
       <h1 class="text-top">MEET CATALINA</h1>

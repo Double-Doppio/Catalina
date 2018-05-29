@@ -2,6 +2,46 @@ header {
   position: fixed;
   width: 100%;
   background-color: #fff;
+  height: 10em;
+  z-index: 1000;
+}
+
+.caption {
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  padding: 0.5em 0;
+  margin: 0;
+  font-family: $gtaMono;
+
+  a {
+    text-decoration: underline;
+    color: $white;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:visited {
+      color: $white;
+    }
+  }
+}
+
+.mobile-menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 5em;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  .fa-bars,
+  .fa-times {
+    font-size: 2.5em;
+  }
 }
 
 a {
@@ -141,10 +181,11 @@ ul.navigation {
   display: inline-flex;
   justify-content: center;
   list-style: none;
-  padding: 25px 0;
+  padding: 0;
   position: relative;
   color: black;
   margin-bottom: 0;
+  align-items: center;
 }
 
 .navShow {
@@ -223,6 +264,7 @@ ul.navigation {
 .flex-container-3 {
   display: flex;
   justify-content: space-between;
+  height: 4.5em;
 }
 
 .flex-sub-main {
@@ -259,5 +301,40 @@ ul.navigation {
   &:hover {
     text-decoration: none;
     color: $red;
+  }
+}
+
+// Mobile Menu
+
+.mobile-drop {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 1438px;
+  z-index: 1000;
+  height: calc(100vh - 5em);
+  background-color: $blue;
+  margin-top: -1px;
+
+  ul {
+    flex-direction: column;
+    font-size: 4.25em;
+  }
+
+  .btn-group {
+    flex-basis: auto;
+    padding: 0;
+    justify-content: center;
+
+    .btn {
+      font-size: 2em;
+    }
+  }
+
+  .pdf-group {
+    font-size: 2em;
   }
 }

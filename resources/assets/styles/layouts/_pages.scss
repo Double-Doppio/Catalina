@@ -1,18 +1,28 @@
 body {
-  border: 1px solid $black;
-  box-sizing: content-box;
+  margin: -1px auto 0 auto;
 }
 
 body,
 header {
   max-width: 1440px;
+}
+
+header {
   margin: 0 auto;
+  border-left: 1px solid $black;
+  border-right: 1px solid $black;
 }
 
 .wrap {
-  padding-top: 162px;
+  padding-top: 10em;
   color: $black;
   display: flex;
+  border: 1px solid $black;
+  margin-top: -1px;
+}
+
+.content {
+  width: 100%;
 }
 
 h1 {
@@ -36,6 +46,10 @@ h1 {
   justify-content: space-around;
   align-items: center;
   padding: 15px 0;
+
+  // h1 {
+  //   margin: 1em 0;
+  // }
 }
 
 .image-section {
@@ -70,21 +84,22 @@ h1 {
 .text-title {
   font-family: $grotXnar;
   text-align: center;
-  font-size: 16.5em;
-  line-height: 200px;
+  font-size: 13.5em;
+  line-height: 1em;
   text-transform: uppercase;
+  padding: 0 20px;
 }
 
 .text-title-small {
-  font-size: 190px;
-  line-height: 175px;
+  font-size: 9.875em;
+  line-height: 1em;
 }
 
 .text-mid {
   font-family: $gtaExtBlk;
   font-size: 1.75em;
   text-align: center;
-  padding: 0 70px;
+  padding: 0 40px;
 }
 
 .text-body {
@@ -92,7 +107,10 @@ h1 {
   width: 65%;
   margin: 0 auto;
   padding: 60px 0;
-  font-size: 1.625em;
+
+  p {
+    font-size: 1.65em;
+  }
 }
 
 // Custom Styling For First Home Section
@@ -119,7 +137,7 @@ h1 {
 }
 
 .meet-title {
-  line-height: 220px;
+  line-height: 1em;
 }
 
 .fa-angle-down {
@@ -135,14 +153,16 @@ h1 {
 // News Page
 
 .container-news,
-.container-endo {
+.container-endo,
+.container-events {
   width: 65%;
   margin: 0 auto;
   padding: 60px 0;
 }
 
 .section-news,
-.section-endo {
+.section-endo,
+.section-event {
   display: flex;
   flex-wrap: wrap;
 }
@@ -185,6 +205,11 @@ h1 {
 
 .link-video {
   width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .excerpt {
@@ -207,4 +232,180 @@ hr {
 .endorser {
   font-size: 1em;
   font-family: $gtaExtBlk;
+}
+
+// Event Page
+
+.image-event {
+  width: 38%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.text-event {
+  width: 62%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  font-family: $gtaMono;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+
+  p {
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 1.375em;
+  }
+
+  .title-event {
+    font-family: $gtaExtBlk;
+    font-size: 2em;
+    line-height: 1em;
+  }
+}
+
+.red-border {
+  border: 2px solid $red;
+  padding: 0.313em 0.6em;
+
+  p {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
+.buttons-event {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  a {
+    width: 35%;
+
+    &:hover {
+      border: 2px solid $blue;
+    }
+  }
+}
+
+.red-border:nth-child(2n+1) {
+  margin-right: 10px;
+}
+
+.red-border:nth-child(2n+2) {
+  margin-left: 10px;
+}
+
+.info-display {
+  cursor: pointer;
+}
+
+.event-info {
+  display: none;
+  margin: 1em 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.625em;
+}
+
+// Join Modal
+.join-modal {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1438px;
+  z-index: 999;
+  height: calc(100vh - 10em);
+  background-color: $blue;
+  margin-top: -1px;
+  padding-bottom: 1px;
+
+  p {
+    max-width: 55%;
+    font-family: $gtaExtBlk;
+    font-size: 1.063em;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  input {
+    font-family: $gtaMono;
+  }
+
+  .submit-container input[type="submit"] {
+    font-family: $gtaExtBlk !important;
+    font-size: 1.5em !important;
+  }
+
+  .join-close {
+    display: none;
+    font-size: 3em;
+  }
+}
+
+// Contribute Modal
+
+.contribute-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .contribute-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: $white;
+    justify-content: center;
+    align-items: center;
+    min-width: 525px;
+
+    img {
+      padding: 1em 0;
+    }
+
+    .contribute-text {
+      background-color: $blue;
+      width: 100%;
+      padding: 1em;
+      text-align: center;
+
+      p {
+        font-family: $gtaExtBlk;
+        font-size: 1.25em;
+      }
+
+      .contribute-title {
+        font-family: $grotXnar;
+        font-size: 6em;
+        margin-bottom: 0;
+      }
+
+      .btn-group {
+        margin: 1em 0;
+        padding: 0;
+      }
+
+      .btn-prime {
+        margin: 0 15px;
+      }
+
+      .fa-times {
+        font-size: 1.5em;
+      }
+    }
+  }
 }

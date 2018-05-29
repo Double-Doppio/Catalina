@@ -6,10 +6,10 @@
 
 @section('content')
   
-    <div class="section-container">
+    <div class="section-container rev">
 
       <div class="text-section box-red">
-        <h1 class="text-top">MEET CATALINA</h1>
+        <h1 class="text-top">ISSUES</h1>
         <h1 class="text-title meet-title">CATALINA'S PLAN</h1>
         <h1 class="text-mid">Catalina has a smart and innovative plan to improve our community.</h1>
         <h1 class="text-bot"><i class="fa fa-angle-down"></i></h1>
@@ -63,7 +63,7 @@
     
   <?php } else { ?>
 
-  <div class="section-container">
+  <div class="section-container rev">
 
     <div class="text-section box-<?php echo $color; ?>">
       <h1 class="text-top"><?php echo $counter; ?></h1>

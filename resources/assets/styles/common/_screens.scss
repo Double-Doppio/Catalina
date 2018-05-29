@@ -1,0 +1,301 @@
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 0.65em;
+  }
+
+  footer {
+    .media-link {
+      img {
+        min-width: 40px;
+        min-height: 40px;
+        max-width: 40px;
+        max-height: 40px;
+      }
+    }
+
+    .youtube-link {
+      max-height: 35px;
+      min-height: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.7em;
+  }
+
+  .wrap {
+    padding-top: 5em;
+  }
+
+  .join-modal {
+    height: calc(100vh - 5em);
+
+    p {
+      max-width: 90%;
+    }
+  }
+
+  header {
+    height: 5em;
+  }
+
+  .home {
+    header {
+      height: 7.5em;
+    }
+
+    .wrap {
+      padding-top: 7.5em;
+    }
+  }
+
+  .catWrapper,
+  .flex-container-3 {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .home-mid {
+    font-size: 27.5em;
+  }
+
+  .section-container {
+    flex-direction: column;
+  }
+
+  .rev {
+    flex-direction: column-reverse;
+  }
+
+  .image-section {
+    overflow-y: hidden;
+
+    img {
+      clip-path: polygon(0% 11%, 100% 11%, 100% 90%, 0% 90%);
+      margin-top: -12%;
+      vertical-align: middle;
+    }
+  }
+
+  .text-section,
+  .image-section {
+    height: calc(600px - 2.5em);
+  }
+
+  .top-section {
+    height: calc(570px - 2.5em);
+
+    img {
+      clip-path: polygon(0% 8%, 100% 8%, 100% 80%, 0% 80%);
+      margin-top: -9%;
+    }
+  }
+
+  .container-news,
+  .container-endo,
+  .container-events,
+  .text-body {
+    width: 87%;
+  }
+
+  .section-event {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-event,
+  .image-event {
+    width: 100%;
+  }
+
+  .text-event {
+    padding: 0;
+  }
+
+  .image-event {
+    margin-bottom: 1em;
+  }
+
+  .title-event {
+    margin: 1em 0 !important;
+  }
+
+  .buttons-event {
+    justify-content: center;
+    margin-top: 1em;
+
+    a {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 665px) {
+  body {
+    font-size: 0.6em;
+  }
+
+  footer {
+    padding: 20px;
+
+    .footer-buttons {
+      width: 90%;
+    }
+  }
+
+  .text-section,
+  .image-section {
+    height: 45em;
+  }
+
+  .top-section {
+    height: 46em;
+
+    img {
+      clip-path: polygon(0% 8%, 100% 8%, 100% 84%, 0% 84%);
+    }
+  }
+}
+
+@media screen and (max-width: 525px) {
+  body {
+    font-size: 0.6em;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .join-modal {
+    .join-close {
+      display: block;
+    }
+  }
+
+  .home {
+    .text-mid {
+      display: none;
+    }
+  }
+
+  .contribute-modal {
+    .contribute-section {
+      min-width: 100%;
+    }
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .no-learn {
+    display: block !important;
+    font-size: 2.5em;
+  }
+
+  .home-mid {
+    display: block !important;
+  }
+
+  .text-section,
+  .image-section {
+    height: 100vw;
+
+    img {
+      clip-path: none;
+      margin-top: 0;
+    }
+  }
+
+  .text-bot {
+    display: none;
+  }
+
+  .top-section {
+    img {
+      clip-path: polygon(0% 5%, 100% 5%, 100% 95%, 0% 95%);
+      margin-top: -6%;
+    }
+  }
+
+  .single-issue {
+    .image-section {
+      display: none;
+    }
+  }
+
+  .section-event {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .buttons-event {
+    justify-content: left;
+    margin-top: 1em;
+  }
+
+  footer {
+    .footer-ul {
+      flex-direction: column;
+
+      li {
+        padding: 0.5em 0;
+      }
+    }
+
+    .media-ul {
+      flex-direction: row;
+
+      li {
+        padding: 0;
+
+        a {
+          margin: 0 5px;
+        }
+      }
+    }
+
+    .media-link {
+      img {
+        min-width: 25px;
+        min-height: 25px;
+        max-width: 25px;
+        max-height: 25px;
+      }
+    }
+
+    .youtube-link {
+      max-height: 20px;
+      min-height: 20px;
+    }
+
+    .footer-text {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 0.5em;
+  }
+}

@@ -1,5 +1,5 @@
 
-<div class="section-container">
+<div class="section-container rev">
 
     <div class="text-section box-blue">
       <h1 class="text-top">NEWS</h1>

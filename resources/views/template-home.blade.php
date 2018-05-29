@@ -9,16 +9,16 @@
 
   {{-- Section 1 --}}
   
-  <div class="section-container">
+  <div class="section-container rev">
 
     <div class="text-section top-section box-blue">
       <h1 class="text-top home-top">DARE TO</h1>
       <h1 class="text-mid home-mid">DREAM</h1>
-      <h1 class="text-bot home-bot">DEMOCRAT FOR ASSEMBLY</h1>
+      <h1 class="text-bot home-bot mobile-hide">DEMOCRAT FOR ASSEMBLY</h1>
     </div>
 
     <div class="image-section top-section">
-      <img src="@asset('images/C-CRUZ_5_11_181708_X1_RGB.jpg')"/>
+      <img class="image-home" src="@asset('images/C-CRUZ_5_11_181708_X1_RGB.jpg')"/>
     </div>
   
   </div>
@@ -41,7 +41,7 @@
 
   {{-- Section 3 --}}
   
-  <div class="section-container">
+  <div class="section-container rev">
 
     <div class="text-section box-red">
       <h1 class="text-top">ISSUES</h1>
@@ -75,13 +75,13 @@
   
   {{-- Section 5 --}}
   
-  <div class="section-container">
+  <div class="section-container rev">
 
     <div class="text-section box-green">
       <h1 class="text-top">OUR COMMUNITY</h1>
       <h1 class="text-title text-title-small">CORONA<br>JACKSON HEIGHTS<br>ELMHURST</h1>
       <h1 class="text-mid">Catalina seeks to represent these diverse communities of Queens. </h1>
-      <a class="learn-more" href="/events"><i class="fa fa-arrow-right"></i>&nbsp;<p>Learn More</p></a>
+      <a class="learn-more" href="/endorsements"><i class="fa fa-arrow-right"></i>&nbsp;<p>Learn More</p></a>
     </div>
 
     <div class="image-section">

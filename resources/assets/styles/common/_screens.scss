@@ -245,6 +245,7 @@
 
   .home-mid {
     display: block !important;
+    margin: -0.3em 0;
   }
 
   .text-section,
@@ -258,11 +259,11 @@
   }
 
   .top-sec-cont {
-    height: calc(100vw - 7.5em);
+    height: calc(100vw - 12.5em);
   }
 
   .top-sec-text {
-    height: calc(100vw + 3.5em);
+    height: calc(100vw - 4.5em);
   }
 
   .text-bot {
@@ -271,7 +272,7 @@
 
   .top-section {
     img {
-      clip-path: polygon(0% 8%, 100% 8%, 100% 95%, 0% 95%);
+      clip-path: polygon(0% 8%, 100% 8%, 100% 75%, 0% 75%);
       margin-top: -9%;
     }
   }

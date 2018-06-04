@@ -23,8 +23,8 @@
         </ul>
 
         <div class="btn-group">
-          <button class="btn btn-prime join"><a href="#join">join us</a></button>
-          <button class="btn btn-prime contribute"><a target="_blank" href="<?php echo get_field("actblue", 8); ?>">contribute</a></button>
+          <a href="#join"><button class="btn btn-prime join">join us</button></a>
+          <a target="_blank" href="<?php echo get_field("actblue", 8); ?>"><button class="btn btn-prime contribute">contribute</button></a>
         </div>
 
         <div class="pdf-group">
@@ -53,9 +53,9 @@
             <?php $actblue = get_field("actblue"); ?>
 
             <div class="btn-group">
-              <button class="btn btn-prime"><a target="_blank" href="<?php echo $actblue.'?amount=10'; ?>">$10</a></button>
-              <button class="btn btn-prime"><a target="_blank" href="<?php echo $actblue.'?amount=25'; ?>"">$25</a></button>
-              <button class="btn btn-prime"><a target="_blank" href="<?php echo $actblue.'?amount=100'; ?>"">$100</a></button>
+              <a target="_blank" href="<?php echo $actblue.'?amount=10'; ?>"><button class="btn btn-prime">$10</button></a>
+              <a target="_blank" href="<?php echo $actblue.'?amount=25'; ?>""><button class="btn btn-prime">$25</button></a>
+              <a target="_blank" href="<?php echo $actblue.'?amount=100'; ?>""><button class="btn btn-prime">$100</button></a>
             </div>
 
             <p><i class="close-contribute fa fa-times"></i></p>

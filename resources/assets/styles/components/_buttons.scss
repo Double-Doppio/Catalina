@@ -6,7 +6,7 @@
   border: 2px solid $black;
   color: $black;
   font-family: $gtaExtBlk;
-  font-size: 1.125em;
+  font-size: 1.5em;
   padding: 17px 20px;
 
   p {
@@ -16,10 +16,21 @@
   &:hover {
     text-decoration: none;
     color: $black;
-    border-color: $white;
+    border: 2px solid $white;
   }
 }
 
 .more {
   margin: 1em 0;
+  font-size: 1.4em;
+}
+
+.back {
+  width: 9em;
+  padding: 10px;
+  font-size: 1em;
+
+  i {
+    font-size: 1.3em;
+  }
 }

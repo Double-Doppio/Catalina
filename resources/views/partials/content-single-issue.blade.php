@@ -45,4 +45,5 @@
 
   <div class="text-body">
     <?php the_content(); ?>
+    <a class="learn-more more back" href="/news"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;<p>BACK</p></a>
   </div>

@@ -30,17 +30,18 @@ export default {
       }
     });
 
-    $(document).on('click', '.menu-open ', function () {
-
-      $(this).removeClass('fa-bars menu-open').addClass('fa-times menu-close');
-      $('.mobile-drop').slideDown().css('display','flex');
-
-    });
-
-    $(document).on('click', '.menu-close', function () {
-
-      $(this).removeClass('fa-times menu-close').addClass('fa-bars menu-open');
-      $('.mobile-drop').slideUp();
+    $(document).on('click', '.btn-group', function () {
+      // CHECK TO SEE IF MENU OPEN CLASS EXISTS
+      var isMenuOpen = Boolean($(this).has('.menu-open')[0]);
+      var isMenuClose = Boolean($(this).has('.menu-close')[0]);
+      if(isMenuOpen){
+        $(this).find('i').removeClass('fa-bars menu-open').addClass('fa-times menu-close');
+        $('.mobile-drop').slideDown().css('display','flex');
+      }
+      if(isMenuClose) {
+        $(this).find('i').removeClass('fa-times menu-close').addClass('fa-bars menu-open');
+        $('.mobile-drop').slideUp();
+      }
 
     });
   },

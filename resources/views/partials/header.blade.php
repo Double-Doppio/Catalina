@@ -19,10 +19,14 @@
     @media screen and (max-width: 768px) {
 
       .home header {
-        height: 7.5em;
+        height: 12em;
       }
       .home .wrap {
-        padding-top: 7.5em;
+        padding-top: 12em;
+      }
+
+      .mobile-drop {
+        height: calc(100vh - 11em);
       }
 
     }
@@ -37,8 +41,8 @@
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="@asset('images/catalina-logo-fpo.svg')" alt="Catalina logo" /></a>
     </div>
     <div class="btn-group">
-      <button class="btn btn-prime join"><a href="#join">join us</a></button>
-      <button class="btn btn-prime contribute"><a target="_blank" href="<?php echo get_field("actblue", 8); ?>">contribute</a></button>
+      <a href="#join"><button class="btn btn-prime join">join us</button></a>
+      <a target="_blank" href="<?php echo get_field("actblue", 8); ?>"><button class="btn btn-prime contribute">contribute</button></a>
     </div>
   </div>
 

@@ -26,5 +26,5 @@
     <h1 class="title-news"><?php echo get_the_title(); ?></h1>
     <p class="date-author"><?php echo $date." | by ".$author; ?></p>
     <p class="text"><?php the_content(); ?></p>
-    
+    <a class="learn-more more back" href="/news"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;<p>BACK</p></a>
 </div>

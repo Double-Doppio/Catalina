@@ -38,7 +38,7 @@
   }
 
   .wrap {
-    padding-top: 5em;
+    padding-top: 7em;
   }
 
   .join-modal {
@@ -54,7 +54,12 @@
   }
 
   header {
-    height: 5em;
+    height: 7em;
+  }
+
+  .caption {
+    font-size: 1.4em;
+    padding: 5px 25px;
   }
 
   .home {
@@ -192,9 +197,28 @@
   body {
     font-size: 0.6em;
   }
+  .text-body p { font-size: 2.2em; }
+
+  .learn-more {
+    font-size: 18px !important;
+    font-weight: bold;
+  }
 
   .mobile-menu {
     display: flex;
+
+    .fa-times,
+    .fa-bars {
+      font-size: 3em;
+    }
+  }
+
+  .quote {
+    font-size: 18px !important;
+  }
+
+  .endorser {
+    font-size: 16px !important;
   }
 
   .mobile-drop {
@@ -203,6 +227,11 @@
 
       li {
         margin: 0.5em 0;
+
+        a:hover {
+          border: none;
+          color: $white;
+        }
       }
     }
 
@@ -231,6 +260,30 @@
   .contribute-modal {
     .contribute-section {
       min-width: 100%;
+      max-width: 100%;
+
+      iframe {
+        height: 250px;
+      }
+
+      .contribute-text {
+        .contribute-title {
+          font-size: 8em;
+        }
+
+        p {
+          font-size: 2.5em;
+        }
+
+        .btn-prime {
+          font-size: 1.5em;
+          width: 7em;
+        }
+
+        .fa-times {
+          font-size: 1.35em;
+        }
+      }
     }
   }
 
@@ -295,6 +348,29 @@
   }
 
   footer {
+    .footer-buttons {
+      font-size: 16px;
+      margin-bottom: 1em;
+
+      button {
+        font-size: 1.25em;
+      }
+    }
+
+    .footer-ul li a {
+      font-size: 16px;
+    }
+
+    .language-link-1,
+    .language-link-2 {
+      font-size: 16px;
+      padding-top: 5px;
+    }
+
+    .btn .btn-prime {
+      padding: 0.5em;
+    }
+
     .footer-ul {
       flex-direction: column;
 
@@ -317,10 +393,9 @@
 
     .media-link {
       img {
-        min-width: 25px;
-        min-height: 25px;
-        max-width: 25px;
-        max-height: 25px;
+        height: 60px;
+        width: 60px;
+        padding-bottom: 5px;
       }
     }
 
@@ -331,6 +406,7 @@
 
     .footer-text {
       flex-direction: column;
+      font-size: 16px;
     }
   }
 }
